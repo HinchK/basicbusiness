@@ -15,7 +15,7 @@
 .clearfix:after { clear: both; }
 
 body {
-	background: #070709;
+	background: #0145a5;
 	color: rgb(255, 255, 255);
 	font-size: 100%;
 	line-height: 1.25;
@@ -105,7 +105,7 @@ section {
 
 section.related {
 	padding: 3em 1em 4em;
-	background: #070709;
+	background: #000000;
 	color: rgba(255,255,255,.95);
 	font-size: 1.5em;
 }
