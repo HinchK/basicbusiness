@@ -99,13 +99,13 @@ a:hover, a:focus {
 
 section {
 	padding: 5em 2em 10em;
-	background: #3d7acb;
+	background: #0145a5;
 	text-align: center;
 }
 
 section.related {
 	padding: 3em 1em 4em;
-	background: #465650;
+	background: #070709;
 	color: rgba(255,255,255,.95);
 	font-size: 1.5em;
 }
