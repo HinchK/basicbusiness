@@ -1,0 +1,20 @@
+{% include '_header.twig' %}
+
+<main>
+    <div class="container">
+        <div class="page-header">
+            <h1>products</h1>
+            <p>All the products for this great company be here.</p>
+        </div>
+        <div class="page-content">
+            {% for product in products %}
+                <div class="product">
+                    <h3>{{ product.name }} | <small>{{ product.position }}</small></h3>
+                    <p>{{ product.body|excerpt(100) }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+
+{% include '_footer.twig' %}

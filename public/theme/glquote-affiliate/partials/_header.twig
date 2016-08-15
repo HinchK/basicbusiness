@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    {# You can either hardcode the filename for the header, or take a value from the current
+   content in 'record', or - as we do in this example - take a random one from the list
+   in the /theme/foundation/theme.yml file. #}
+
+    {% set headerimage_low = paths.theme ~ 'images/' ~ random(theme.headerimage) %}
+    {% set headerimage = paths.theme ~ 'images/' ~ random(theme.headerimage) %}
+
+    {# the values in the 'app.config' object are taken directly from the file app/config/config.yml #}
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ app.config.get('general/sitename') }}</title>
+        {# <link rel="stylesheet" href="http://bootswatch.com/superhero/bootstrap.min.css"> #}
+        <meta name="keywords" content="form, minimal, interface, single input, big form, responsive form, transition"/>
+        <meta name="author" content="Codrops"/>
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="{{ paths.theme }}css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ paths.theme }}css/demo.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ paths.theme }}css/component.css"/>
+        <script src="{{ paths.theme }}js/modernizr.custom.js"></script>
+    </head>
+    <body>
+        {#{{ dump(paths) }}#}
+        <div class="container">
+            <!-- Top Navigation -->
+            <div class="codrops-top clearfix">
+                <a class="codrops-icon codrops-icon-prev" href="https://glquote.com">
+                    <span>affiliate: glquote.com</span>
+                </a>
+                <span class="right">
+                    <a class="codrops-icon codrops-icon-drop" href="https://glquote.com">
+                        <span>Orr and Associates Insurance Services</span>
+                    </a>
+                </span>
+            </div>
+            <header class="codrops-header">
+                <h1>{{ app.config.get('general/sitename') }}</h1>
+                {% if app.config.get('general/payoff') %}
+                    <span>{{ app.config.get('general/payoff') }}</span>
+                {% endif %}
+            </header>

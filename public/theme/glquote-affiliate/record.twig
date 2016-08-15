@@ -1,0 +1,26 @@
+{% include '_header.twig' %}
+
+<main>
+    <div class="container">
+        <div class="page-header">
+            <h1>{{ record.title }}</h1>
+        </div>
+
+    {# Output all fields, in the order as defined in the contenttype.
+       To change the generated html and configure the options, see:
+       https://docs.bolt.cm/templates/fields-tag #}
+
+    {{ fields() }}
+
+    {# Uncomment this if you wish to dump the entire record to the client, for debugging purposes.
+    {{ dump(record) }}
+    #}
+
+        <div class="page-content">
+            <h2>Record Stuff Here</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eum tempore optio corporis aspernatur tempora temporibus vero maxime consectetur dolorum dolore vel numquam aut iure, esse, repudiandae nemo animi, vitae.</p>
+        </div>
+    </div>
+</main>
+
+{% include '_footer.twig' %}

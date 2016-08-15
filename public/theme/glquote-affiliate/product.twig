@@ -1,0 +1,16 @@
+{% include '_header.twig' %}
+
+<main>
+    <div class="container">
+        <div class="page-header">
+            <h1>{{ product.name }} | <small>{{ product.position }}</small></h1>
+            <time>{{ product.datecreated|date("jS F, Y") }}</time>
+        </div>
+        <div class="page-content">
+            {{ product.body }}
+        </div>
+
+    </div>
+</main>
+
+{% include '_footer.twig' %}

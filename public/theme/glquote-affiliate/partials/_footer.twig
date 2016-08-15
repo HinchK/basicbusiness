@@ -1,0 +1,43 @@
+      <!-- Footer -->
+
+      <section class="related">
+        <p>If you enjoyed this demo you might also like:</p>
+        <a href="https://glquote.com/instant-general-liability-insurance/annual-general-liability-insurance">
+          <img src="https://glquote.com/templates/rt_chapelco/images/per-project-general-liability-home.jpg" />
+          <h3>Need Worker's Comp Insurance?</h3>
+        </a>
+        <a href="https://glquote.com/instant-general-liability-insurance/per-project-general-liability">
+          <img src="https://glquote.com/templates/rt_chapelco/images/annual-general-liability-insurance-home.jpg" />
+            <h3>Get a General Liability Quote Online!</h3>
+        </a>
+      </section>
+    </div>
+    {# <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> #}
+    <!-- /container -->
+    <script src="{{ paths.theme }}js/classie.js"></script>
+    <script src="{{ paths.theme }}js/stepsForm.js"></script>
+    <script>
+    var theForm = document.getElementById('theForm');
+
+    new stepsForm(theForm, {
+      onSubmit: function(form) {
+        // hide form
+        classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
+
+        /*
+        form.submit()
+        or
+        AJAX request (maybe show loading indicator while we don't have an answer..)
+        */
+
+        // let's just simulate something...
+        var messageEl = theForm.querySelector('.final-message');
+        messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+        classie.addClass(messageEl, 'show');
+      }
+    });
+    </script>
+  </body>
+
+</html>
