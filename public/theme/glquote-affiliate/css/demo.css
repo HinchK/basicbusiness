@@ -15,21 +15,21 @@
 .clearfix:after { clear: both; }
 
 body {
-	background: #0145a5;
+	background: #3d7acb;
 	color: rgb(255, 255, 255);
 	font-size: 100%;
-	line-height: 1.25;
+	line-height: 1.1;
 	font-family: 'Lato', Arial, sans-serif;
 }
 
 a {
-	color: rgba(255,255,255,0.9);
+	color: rgba(255,255,255,0.82);
 	text-decoration: none;
 	outline: none;
 }
 
 a:hover, a:focus {
-	color: rgba(61, 122, 203, 0.6);
+	color: rgba(255, 255, 255, 1);
 }
 
 .codrops-header {
@@ -105,9 +105,9 @@ section {
 
 section.related {
 	padding: 3em 1em 4em;
-	background: #000000;
+	background: #0145a5;
 	color: rgba(255,255,255,.95);
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .related > a {
@@ -142,7 +142,7 @@ section.related {
 	padding: 0.5em 0 0.3em;
 	max-width: 300px;
 	font-weight: 400;
-	font-size: 0.75em;
+	font-size: 0.9em;
 	text-align: left;
 }
 
