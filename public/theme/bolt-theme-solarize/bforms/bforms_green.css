@@ -1,0 +1,113 @@
+.boltform label.required:after {
+    content: " *";
+    color: #F00;
+    font-weight: bold;
+}
+
+p.boltform-error {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #EED3D7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #B94A48;
+    background-color: #F2DEDE;
+}
+
+li.boltform-error {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #EED3D7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #B94A48;
+    background-color: #F2DEDE;
+}
+
+p.boltform-message {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #D6E9C6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #468847;
+    background-color: #DFF0D8;
+}
+
+fieldset {
+    padding: 31px 32px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+fieldset *:last-child {
+    margin-bottom: 0!important;
+}
+legend {
+    font-weight: 500;
+    font-size: 86%;
+    text-transform: uppercase;
+    padding: 0 1em;
+    margin-left: -1em;
+    top: 2px;
+    position: relative;
+    line-height: 0;
+}
+/* General button style (reset) */
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Button 6 */
+.btn-6 {
+    color: #ffffff;
+    background: #82b440;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.btn-6:active {
+    top: 2px;
+}
+/* Button 6l */
+.btn-6l {
+    border: 4px double #82b440;
+    border-radius: 60px;
+}
+
+.btn-6l:hover {
+    background: transparent;
+    color: #111111;
+}
