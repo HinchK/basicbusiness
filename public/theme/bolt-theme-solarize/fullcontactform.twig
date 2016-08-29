@@ -1,0 +1,46 @@
+{% extends 'master.twig' %}
+{% block bodyclass %}no-sidebar{% endblock bodyclass %}
+{% block banner %}{% endblock banner %}
+{% block main %}
+<!-- Main Page Content and Sidebar -->
+    <!-- Main Blog Content -->
+<div id="main" class="wrapper style4">
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <section>
+                <header class="major">
+                    <h2>{{ record.title }}</h2>
+                    <span class="byline">{{ record.teaser }}</span>
+                </header>
+                <span>
+                    {{ boltforms('fullcontact') }}
+                </span>
+                <p>{{ record.body }}</p>
+            </section>
+        </div>
+    </div>
+<!-- End Main Content -->
+</div>
+    <script>
+        function getRequests() {
+            var s1 = location.search.substring(1, location.search.length).split('&'),
+                    r = {}, s2, i;
+            for (i = 0; i < s1.length; i += 1) {
+                s2 = s1[i].split('=');
+                r[decodeURIComponent(s2[0]).toLowerCase()] = decodeURIComponent(s2[1]);
+            }
+            return r;
+        };
+        var QueryString = getRequests();
+
+        contactName = QueryString["name"];
+        contactPhone = QueryString["phone"];
+
+        document.getElementById("fullcontact_name").value = contactName.split('+').join(' ');
+        document.getElementById("fullcontact_phone").value = contactPhone;
+    </script>
+    <!-- Team -->
+    {% include '_team.twig' %}
+<!-- End Main Content and Sidebar -->
+{% endblock main %}
