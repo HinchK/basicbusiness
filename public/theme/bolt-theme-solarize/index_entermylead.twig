@@ -1,0 +1,42 @@
+{% extends 'master.twig' %}
+
+{% block bodyclass %}homepage{% endblock bodyclass %}
+
+        {% block banner %}
+            <!-- Banner -->
+            <div id="banner">
+                <section class="container">
+                    <h2>{{ app.config.get('general/sitename') }}</h2>
+                    <span>{{ app.config.get('general/payoff') }}</span>
+                </section>
+            </div>
+        </div>
+        {% endblock banner %}
+
+        {% block main %}
+        <!-- Section One -->
+            <section class="wrapper style2">
+                 <div id="content" class="container">
+                        <section>
+                            <header class="major">
+                                <h2>Enter My Lead</h2>
+                            </header>
+                            <span>{{ boltforms('entermylead') }}</span>
+                        </section>
+                </div>
+            </section>
+
+        <!-- Section Two -->
+            {#<div class="wrapper style3">#}
+                {#<section class="container">#}
+                    {#<header class="major">#}
+                        {#<h2>{{ record.title }}</h2>#}
+                    {#</header>#}
+                    {#<p>{{ record.teaser }}</p>#}
+                    {#<a href="{{ record.link }}" class="button alt">{{ record.title }}</a>#}
+                {#</section>#}
+            {#</div>#}
+
+        {#{% include '_team.twig' %}#}
+
+        {% endblock main %}
